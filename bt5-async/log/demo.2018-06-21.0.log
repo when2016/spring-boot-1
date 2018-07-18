@@ -1,0 +1,13 @@
+2018-06-21 14:58:41,260 INFO (StartupInfoLogger.java:48)- Starting SpringBootTestCase on Sam with PID 9364 (started by WONGS in E:\workspace\repertory\git\spring-boot\bt-async)
+2018-06-21 14:58:41,261 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-06-21 14:58:41,261 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-21 14:58:48,624 INFO (StartupInfoLogger.java:57)- Started SpringBootTestCase in 8.022 seconds (JVM running for 8.854)
+2018-06-21 14:58:48,700 INFO (AsyncTask.java:30)- Begin Task One
+2018-06-21 14:58:48,700 INFO (AsyncTask.java:51)- Begin Task Three
+2018-06-21 14:58:48,700 INFO (AsyncTask.java:41)- Begin Task Two
+2018-06-21 14:58:51,033 INFO (AsyncTask.java:55)- Task Three is End, cost times 2332
+2018-06-21 14:58:55,662 INFO (AsyncTask.java:45)- Task Two is End, cost times 6960
+2018-06-21 14:58:57,495 INFO (AsyncTask.java:34)- Task One is End, cost times 8794
+2018-06-21 16:10:17,167 INFO (StartupInfoLogger.java:48)- Starting SpringBootTestCase on Sam with PID 2156 (started by WONGS in E:\workspace\repertory\git\spring-boot\bt-async)
+2018-06-21 16:10:17,168 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-06-21 16:10:17,168 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default

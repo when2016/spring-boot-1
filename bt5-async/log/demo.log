@@ -1,0 +1,7 @@
+2018-06-21 16:10:24,320 INFO (StartupInfoLogger.java:57)- Started SpringBootTestCase in 7.627 seconds (JVM running for 8.491)
+2018-06-21 16:10:24,419 INFO (AsyncTaskByCustomizeThreadPool.java:48)- Begin Task Three
+2018-06-21 16:10:24,419 INFO (AsyncTaskByCustomizeThreadPool.java:39)- Begin Task Two
+2018-06-21 16:10:24,419 INFO (AsyncTaskByCustomizeThreadPool.java:29)- Begin Task One
+2018-06-21 16:10:29,937 INFO (AsyncTaskByCustomizeThreadPool.java:52)- Task Three is End, cost times 5518
+2018-06-21 16:10:30,262 INFO (AsyncTaskByCustomizeThreadPool.java:43)- Task Two is End, cost times 5843
+2018-06-21 16:10:33,926 INFO (AsyncTaskByCustomizeThreadPool.java:33)- Task One is End, cost times 9507

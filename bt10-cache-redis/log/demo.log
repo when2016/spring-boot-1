@@ -1,0 +1,9 @@
+2018-06-22 09:57:56,654 INFO (StartupInfoLogger.java:48)- Starting SpringBootTestCase on Sam with PID 9396 (started by WONGS in E:\workspace\repertory\git\spring-boot\bt10-cache-redis)
+2018-06-22 09:57:56,655 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-06-22 09:57:56,655 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-06-22 09:58:10,961 INFO (EventConfig.java:25)- 订单创建，待支付
+2018-06-22 09:58:10,971 INFO (EventConfig.java:35)- 用户完成支付，待收货: start
+2018-06-22 09:58:10,972 INFO (EventConfig.java:30)- 用户完成支付，待收货
+2018-06-22 09:58:10,973 INFO (EventConfig.java:40)- 用户完成支付，待收货: end
+2018-06-22 09:58:10,974 INFO (EventConfig.java:45)- 用户已收货，订单完成
+2018-06-22 09:58:10,977 INFO (StartupInfoLogger.java:57)- Started SpringBootTestCase in 15.382 seconds (JVM running for 16.907)
