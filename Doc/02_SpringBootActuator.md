@@ -20,7 +20,7 @@
 | metrics | 应用的度量标准信息 | GET | 是 | metrics  |
 
 ## 访问方式
-- 2.0.X以后SpringBoot的actuator启动端点监控web端默认加载默认只有两个info, health可见的页面节点
+- 2.0.x 以后SpringBoot的actuator启动端点监控web端默认加载默认只有两个info, health可见的页面节点
 - 默认情况下，敏感路径并不暴露。如需暴露（以metrics为例），需添加配置
 
 ~~~
@@ -29,7 +29,6 @@ management:
     web:
       exposure:
         include: "*"
-        exclude: "env,beans"
 ~~~
 
 
@@ -58,3 +57,11 @@ http://localhost:8080/actuator/mappings
 ### /health
 http://localhost:8080/actuator/health
 ![avatar](https://github.com/rothschil/static/raw/master/images/springboot/5-health.jpg)
+
+### /beans
+http://localhost:8080/actuator/beans
+![avatar](https://github.com/rothschil/static/raw/master/images/springboot/6-beans.jpg)
+
+### /env
+http://localhost:8080/actuator/env
+![avatar](https://github.com/rothschil/static/raw/master/images/springboot/7-env.jpg)
