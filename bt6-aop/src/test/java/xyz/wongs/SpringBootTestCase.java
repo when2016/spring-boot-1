@@ -14,10 +14,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-import xyz.wongs.async.AsyncTask;
-import xyz.wongs.async.AsyncTaskByCustomizeThreadPool;
-
-import java.util.concurrent.Future;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -39,12 +35,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class SpringBootTestCase {
 
     private MockMvc mvc;
-
-    @Autowired
-    private AsyncTask asyncTask;
-
-    @Autowired
-    private AsyncTaskByCustomizeThreadPool asyncTaskByCustomizeThreadPool;
+//
+//    @Autowired
+//    private AsyncTask asyncTask;
+//
+//    @Autowired
+//    private AsyncTaskByCustomizeThreadPool asyncTaskByCustomizeThreadPool;
 
     @Autowired
     private WebApplicationContext wac;
@@ -68,49 +64,16 @@ public class SpringBootTestCase {
      * @exception
      * @date        2018/6/21 16:03
      */
-    @Test
-    public void testAsyncTaskByCustomizeThreadPool() throws Exception{
-        asyncTaskByCustomizeThreadPool.doTaskOne();
-        asyncTaskByCustomizeThreadPool.doTaskTwo();
-        asyncTaskByCustomizeThreadPool.doTaskThree();
-        Thread.currentThread().join();
-    }
+//    @Test
+//    public void testAsyncTaskByCustomizeThreadPool() throws Exception{
+//        asyncTaskByCustomizeThreadPool.doTaskOne();
+//        asyncTaskByCustomizeThreadPool.doTaskTwo();
+//        asyncTaskByCustomizeThreadPool.doTaskThree();
+//        Thread.currentThread().join();
+//    }
 
 
-    /**
-     * 方法实现说明
-     *
-     * @param
-     * @return void
-     * @throws
-     * @method testAsyncTask
-     * @author WCNGS@QQ.COM
-     * @version
-     * @date 2018/6/21 14:52
-     * @see
-     */
-    @Test
-    public void testAsyncTask() throws Exception {
 
-        long start = System.currentTimeMillis();
-
-        Future<String> task1 = asyncTask.doTaskOne();
-        Future<String> task2 = asyncTask.doTaskTwo();
-        Future<String> task3 = asyncTask.doTaskThree();
-
-        while (true) {
-            if (task1.isDone() && task2.isDone() && task3.isDone()) {
-                // 三个任务都调用完成，退出循环等待
-                break;
-            }
-            Thread.sleep(1000);
-        }
-
-        long end = System.currentTimeMillis();
-
-        System.out.println("任务全部完成，总耗时：" + (end - start) + "毫秒");
-
-    }
 
     @Test
     public void getHello() throws Exception {

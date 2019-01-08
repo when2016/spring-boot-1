@@ -11,4 +11,4 @@
 
 ## [强大的Spring Boot Actuator](https://github.com/rothschil/spring-boot/blob/master/Doc/02_SpringBootActuator.md)
 
-## [SpringBootAdmin](https://github.com/rothschil/spring-boot/blob/master/Doc/03_SpringBootAdmin.md)
+## [通用的SpringBootAdmin监控](https://github.com/rothschil/spring-boot/blob/master/Doc/03_SpringBootAdmin.md)
