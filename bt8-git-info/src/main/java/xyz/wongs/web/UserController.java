@@ -81,7 +81,7 @@ public class UserController {
 
         // 处理"/users/{id}"的GET请求，用来获取url中id值的User信息
         // url中的id可通过@PathVariable绑定到函数的参数中
-        return userRepository.findOne(id);
+        return userRepository.getOne(id);
     }
 
     /**
@@ -100,7 +100,7 @@ public class UserController {
     public String putUser(@PathVariable Long id, @ModelAttribute User user) {
 
         // 处理"/users/{id}"的PUT请求，用来更新User信息
-        User u = userRepository.findOne(id);
+        User u = userRepository.getOne(id);
         u.setName(user.getName());
         u.setAge(user.getAge());
         userRepository.saveAndFlush(u);
@@ -122,7 +122,7 @@ public class UserController {
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     public String deleteUser(@PathVariable Long id) {
         // 处理"/users/{id}"的DELETE请求，用来删除User
-        userRepository.delete(id);
+        userRepository.delete(userRepository.getOne(id));
         return "success";
     }
 }
